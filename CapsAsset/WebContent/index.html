@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Animation</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<style>
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	
+	color: white;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+	<img src="logo1.png" width="180px" height="60">	
+ 
+  <a href="#home">Contact</a>
+  <a href="#news">News</a>
+  <a href="#contact">About</a>
+  <a href="#about">Home</a>
+  
+  
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<center> <h1 style="color:#ff4d4d">Asset Management System</h1> </center>
+
+<div id="container">
+
+ 
+ 
+ Asset Management solutions give you a 
+ single point of control over production, 
+ infrastructure, facilities, transportation,
+ and communications assets by managing
+ them all, allows sharing and enforcement 
+ of best practices, inventory, resources, and 
+ personnel so that you can optimize the performance
+ of your assets  and maximize return on investment.
+ <a href="login.html">
+<button class="button1" onclick="document.getElementById('id01').style.display='block'">
+<span>Login </span></button>
+</a>
+ 
+</div>
+
+<!--Login Modal Start-->
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="https://www.w3schools.com/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="C:\Users\Pranav\Desktop\Prince\images\users.png" alt="users" class="users">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  
+  </form>
+
+</div>
+
+<!--Login Modal End-->
+
+<canvas id="nokey" width="800" height="800">
+
+    
+</canvas>
+<div class="footer">
+  <p>Capgemini Mini Project</p>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

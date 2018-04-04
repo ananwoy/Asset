@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<link rel="stylesheet" type="text/css" href="css/styl.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+ <style>
+ 	.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	
+	color: white;
+	text-align: center;
+}
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	
+	color: white;
+	text-align: center;
+}
+ </style>
+
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+	<img src="logo1.png" width="180px" height="60" style="float:left">
+	
+  <a href="#home">Contact</a>
+  <a href="#news">News</a>
+  <a href="#contact">About</a>
+  <a href="#about">Home</a>
+  
+  <center>
+  <h1 style="color:  #ff4d4d; text-align:center;" >Asset Management System</h1></center>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+  <div class="container">
+   <center> <h3 style="color: Grey">User Login</h3> </center>
+    <fieldset style="width: 250px;">
+      
+    <form method="post" action="http://localhost:8080/CapsAsset/login">
+      <table>
+        
+        <tr><td><label style="color: Grey;">Username :</label></td></tr>
+        <tr><td><input type="text" name="uname" placeholder="Username"></td></tr>
+
+        <tr><td><label style="color: Grey;">Password :</label></td></tr>
+        <tr><td><input type="password" name="pwd" placeholder="Password"></td></tr>
+
+        <tr><td><button>Submit</button></td></tr>
+
+      </table>
+    </form>
+    </fieldset>
+  </div>
+
+<canvas id="nokey" width="800" height="800">
+
+</canvas>
+<div class="footer">
+  <p>Capgemini Mini Project</p>
+</div>
+<script src="js/jsc.js"></script>
+</body>
+</html>
